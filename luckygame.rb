@@ -6,17 +6,18 @@ def gameluck
   print 'Peki kaç deneme hakkınız olsun? '
   tries = (gets.chomp.to_i)
   number = rand(limit)+1
-  try = 0
+  try = 1
 
   puts
   loop do
-    try += 1
-      if try >= tries
+      if try > tries
         puts 'Maalesef deneme hakkınız kalmadı'
         break
       end
       print "Tahmininizi giriniz [#{tries}/#{try}] => "
       guess = gets.chomp.to_i
+      try += 1
+
   
     if guess == number
       puts 'Başardınız'
