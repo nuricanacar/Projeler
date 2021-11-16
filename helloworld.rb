@@ -1,3 +1,25 @@
+
+
+def calcuatorx(a, b)
+    if a>>b    
+       puts 'Girdiğiniz ilk sayı diğerinden büyük'
+     elsif a==b
+      puts 'girdiğiniz sayılar eşit'
+     else
+       puts 'Girdiğiniz ilk sayı diğerinden küçük'
+    end
+  end
+  
+  
+   
+    
+
+    x = gets.chomp.to_i
+    y = gets.chomp.to_i
+    calcuatorx(x, y)
+
+exit
+
 cities = %w[
 istanbul
 samsun
